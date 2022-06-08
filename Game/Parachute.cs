@@ -21,15 +21,6 @@ namespace cse210_03.Game
             this._parachute.Add("  / \\");
         }
 
-        public string DisplayParachute()
-        {
-            for (int i = 0; i < _parachute.Count; i++)
-            {
-                terminalServices.WriteText(_parachute[i]);
-            }
-            return "";
-        }
-
         public bool CheckInput(List<char> guesses, string currentGuess)
         {
             if (guesses.Contains(currentGuess[0]))
@@ -45,6 +36,8 @@ namespace cse210_03.Game
 
         public bool CheckParachute(List<char> wordGuess, int tries)
         {
+            _count = 0;
+
             for (int i = 0; i < wordGuess.Count; i++)
             {
                 if (wordGuess[i] != '_')
@@ -66,7 +59,7 @@ namespace cse210_03.Game
             }    
             else
             {
-                return false;
+                return true;
             }
         }
 

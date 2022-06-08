@@ -58,7 +58,7 @@ namespace cse210_03.Game
 
             while (_checkInput)
             {
-                currentGuess = terminalService.ReadText("\nGuess a letter [z-z]: ");
+                currentGuess = terminalService.ReadText("\nGuess a letter [a-z]: ");
                 _checkInput = parachute.CheckInput(guessedLetters, currentGuess);
             }
             guessedLetters.Add(currentGuess[0]);
