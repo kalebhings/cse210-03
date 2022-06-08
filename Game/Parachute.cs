@@ -12,13 +12,13 @@ namespace cse210_03.Game
 
         public Parachute()
         {
-            _parachute.Add("  ___");
-            _parachute.Add(" /___\\");
-            _parachute.Add(" \\   /");
-            _parachute.Add("  \\ /");
-            _parachute.Add("   O");
-            _parachute.Add("  /|\\");
-            _parachute.Add("  / \\");
+            this._parachute.Add("  ___");
+            this._parachute.Add(" /___\\");
+            this._parachute.Add(" \\   /");
+            this._parachute.Add("  \\ /");
+            this._parachute.Add("   O");
+            this._parachute.Add("  /|\\");
+            this._parachute.Add("  / \\");
         }
 
         public string DisplayParachute()
