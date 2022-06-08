@@ -12,7 +12,6 @@ namespace cse210_03.Game
     public class Director
     {
         private string word;
-        private string person;
         private bool _isPlaying = true;
         private bool _checkInput;
         private Puzzle puzzle = new Puzzle();
